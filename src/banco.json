@@ -1,4 +1,22 @@
 {
+  "categoria": [
+    {
+      "id": "7e40",
+      "nome": "javascript"
+    },
+    {
+      "id": "669f",
+      "nome": "css3"
+    },
+    {
+      "nome": "reactjs 2024",
+      "id": "f597"
+    },
+    {
+      "id": "9a78",
+      "nome": "json-server"
+    }
+  ],
   "cadastrar_user": [
     {
       "nome": "maria oliveira sousa",

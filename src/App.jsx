@@ -1,9 +1,9 @@
-import { UserCadastro } from "./views/UserCadastro"
+import { Categoria } from "./views/Categoria"
 
 function App() {
   return (
     <>
-      <UserCadastro />
+      <Categoria />
     </>
   )
 }
