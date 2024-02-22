@@ -1,0 +1,16 @@
+{
+  "cadastrar_user": [
+    {
+      "nome": "maria oliveira sousa",
+      "email": "marioliveira@gmail.com",
+      "senha": "123456",
+      "id": "1"
+    },
+    {
+      "nome": "aline sousa",
+      "email": "aline@gmail.com",
+      "senha": "123456",
+      "id": "2"
+    }
+  ]
+}
