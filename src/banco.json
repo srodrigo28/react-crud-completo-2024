@@ -7,21 +7,13 @@
     {
       "id": "669f",
       "nome": "css3"
-    },
-    {
-      "nome": "reactjs 2024",
-      "id": "f597"
-    },
-    {
-      "id": "9a78",
-      "nome": "json-server"
     }
   ],
   "cadastrar_user": [
     {
-      "nome": "maria oliveira sousa",
-      "email": "marioliveira@gmail.com",
-      "senha": "123456",
+      "nome": "maria 3",
+      "email": "maria3@gmail.com",
+      "senha": "123123",
       "id": "1"
     },
     {

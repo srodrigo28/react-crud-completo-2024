@@ -36,7 +36,7 @@ export function Categoria(){
     const Limpar = () => {
         setNome('')
     }
-    /** Cadastrar usando o Inser */
+    /** Valida e chama o Inserir */
     const Validar = (e) => {
         e.preventDefault();
 

@@ -111,7 +111,7 @@ export function UserCadastro(){
     
     return(
         <div className="container">
-            <h1 className="mt-5 mb-5">Cadastro</h1>
+            <h1 className="mt-5 mb-5">Cadastro Usuário</h1>
 
             <form onSubmit={Cadastrar}>
                 <div className="row">
@@ -155,27 +155,29 @@ export function UserCadastro(){
                 <div className="btn-group mt-3">
                     <input type="hidden" value={id} name="id" onChange={ e => setId(e.target.value)}   />
                     <button className={`btn btn-outline-primary ${classBtnInserir}`} onClick={Inserir}>Salvar</button>
-                    <button className={`btn btn-outline-warning ${classBtnAlterar}`} onClick={Alterar}>Editar</button>
+                    <button className={`btn btn-outline-warning ${classBtnAlterar}`} onClick={Alterar}>Atualizar</button>
                     <button type="button" className="btn btn-danger" onClick={Limpar}>Cancelar</button>
                 </div>
             </form>
 
+            <div className="table-responsive">
             <table className="table table-striped">
-                <thead>
+                <thead className="">
                     <tr>
-                        <th className="fild-50">Código</th>
-                        <th className="fild-100">nome</th>
-                        <th className="fild-100">Email</th>
+                        <th>Código</th>
+                        <th className="w-50">nome</th>
+                        <th className="w-50">Email</th>
+                        <th className="w-25">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
                 { data.map((item) => (
                       <tr key={item.id}>
-                      <td className="fild-50">{item.id}</td>
+                      <td>{item.id}</td>
                       <td>{item.nome}</td>
                       <td>{item.email}</td>
                       <td className="sumir">{item.senha}</td>
-                      <td className="fild-btn btn-group">
+                      <td className="btn-group">
                             <button 
                                 onClick={ () => CarregaCampos( item.nome, item.email, item.senha, item.id ) } 
                                 className="btn btn-outline-warning">
@@ -193,6 +195,7 @@ export function UserCadastro(){
                 }    
                 </tbody>
             </table>
+            </div>
         </div>
     )
 }
